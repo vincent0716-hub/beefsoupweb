@@ -327,3 +327,6 @@ display : flex;
 justify-content: center;
 align-items: center;
 }
+.testcolorInGitandVercel{
+    color: #397a3d;
+}

@@ -11,8 +11,8 @@ export default class menu1 extends Component {
                 <img className='cropbeef'src={CropBeef} alt="cropbeef" layout='fill'/>
                 <img className='cropbeef'src={Frydump} alt="Fry" layout='fill'/>
                 <img className='cropbeef'src={Sweetricecake} alt="Sweet" layout='fill'/>
-                <h2>price:14.8 AUD</h2><h2>price:12 AUD</h2>
-                <h2>price:8 AUD</h2>
+                <h2 className ='testcolorInGitandVercel'>price:14.8 AUD</h2><h2 className ='testcolorInGitandVercel'>price:12 AUD</h2>
+                <h2 className ='testcolorInGitandVercel'> price:8 AUD</h2>
                 </div>
             </div>
             
