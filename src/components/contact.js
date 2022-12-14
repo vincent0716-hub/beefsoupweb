@@ -46,7 +46,7 @@ export default class contact extends Component {
                 <div className='editposition2'>
                   <p className='font_9'>
                    <span>
-                    <span >1 Dixon St, Sydney, NSW 2000</span>
+                    <span >Burwood, Chinatown, 2 FLoor, Sydney, NSW</span>
                    </span>
                  </p>
                 </div>
@@ -60,7 +60,7 @@ export default class contact extends Component {
                 <div className='editposition2'>
                   <p className='font_9'>
                    <span>
-                    <span >Mon - Sun: 11:30am - 2:30pm, 5:00pm - 22:00pm</span>
+                    <span >Mon - Sun: 11:30am - 2:30pm, 5:00pm - 21:00pm</span>
                    </span>
                  </p>
                 </div>
@@ -87,24 +87,7 @@ export default class contact extends Component {
                 </div>
              </div>
         </div>
-        <div className='_2UgQw' id='comp-k0los9w5' aria-disabled='false'>
-          <a className='_1fbEI ' aria-disabled='false'
-           style={Object.assign({}, this.style, {
-            background: this.state.background,
-          })}
-          onMouseEnter={() => {
-            this.setState({ background: '#67c76d' });
-          }}
-          onMouseLeave={() => {
-            this.setState({ background: '#4e7c51' });
-          }}>
-            
-            <span className='_1Qjd7'>
-              RESERVE NOW
-            </span>
-            
-          </a>
-        </div>
+       
         </div>
       </div>
       </div>

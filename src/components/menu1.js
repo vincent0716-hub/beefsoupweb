@@ -2,20 +2,38 @@ import React, { Component } from 'react'
 import CropBeef from './cropBeef.png'
 import Frydump from './frydump.png'
 import Sweetricecake from './sweetricecake1.jpeg'
+import videoBackground from './editedsoup.mp4'
+import {motion} from 'framer-motion'
+import Bottom from './bottom'
 export default class menu1 extends Component {
     render() {
+        const arrSource = [
+            {  source: CropBeef,text : "Beef Soup" },
+            {  source: Frydump,text : "Fried Dump" },
+            {  source: Sweetricecake,text : "Seeet Rice Cake" }
+        ];
         return (
+            <div>
             <div className='menudiv'>
-               
-                <div  className='editpositionmenu'>
-                <img className='cropbeef'src={CropBeef} alt="cropbeef" layout='fill'/>
-                <img className='cropbeef'src={Frydump} alt="Fry" layout='fill'/>
-                <img className='cropbeef'src={Sweetricecake} alt="Sweet" layout='fill'/>
-                <h2 className ='testcolorInGitandVercel'>price:14.8 AUD</h2><h2 className ='testcolorInGitandVercel'>price:12 AUD</h2>
-                <h2 className ='testcolorInGitandVercel'> price:8 AUD</h2>
+                
+                <video src={videoBackground} autoPlay loop muted />
+                <div className='editpositionmenu'>
+                    
+                    {
+                        arrSource.map(menusource=>
+                        <div className='container' key={menusource}>
+                        <img className='cropbeef' src={menusource.source} alt="Sweet" layout='fill' />
+                        <div className='overlay'>
+                            <div className='text'>{menusource.text}</div>
+                        </div>
+                    </div>)
+                    }
                 </div>
             </div>
             
+            </div>
+           
+
         )
     }
 }

@@ -9,8 +9,9 @@ import panda from './panda.png';
 import bamboo from './bamboo.png';
 import Contact from './components/contact';
 import { BrowserRouter as Router, Route, Routes, Switch, NavLink, Link } from 'react-router-dom';
-import  Menu1  from './components/menu1'
+import Menu1 from './components/menu1'
 import Menu from './menu';
+import { motion } from 'framer-motion'
 function App() {
 
   const contact = useRef(null);
@@ -72,6 +73,7 @@ function App() {
   return (
 
     <div >
+      <div className='HEADERDiv'>
       <header className="header" style={styles.header}>
         <div >
           <img style={styles.pictureposition3} src={logo1} alt="logo" />
@@ -83,23 +85,23 @@ function App() {
           <Nav defaultActiveKey="/home" as="ul" >
             <div className="transparentfont moveSpace">
               <Nav.Item className="fontcolor a" as="li">
-                <Link to='/'>Home</Link>
+                <Link to='/' className="AboutHover">Home</Link>
               </Nav.Item>
             </div>
             <div className="transparentfont moveSpace2">
               <Nav.Item className="fontcolor a" as="li">
-                <Nav.Link eventKey="link-1" onClick={() => scrollToSection(about)}>About</Nav.Link>
+                <Nav.Link className="AboutHover" eventKey="link-1" onClick={() => scrollToSection(about)}>About</Nav.Link>
               </Nav.Item>
             </div>
             <div className="transparentfont moveSpace3">
               <Nav.Item className="fontcolor a" as="li">
-                <Nav.Link eventKey="link-2" onClick={() => scrollToSection(contact)}>Contact</Nav.Link>
+                <Nav.Link className="AboutHover" eventKey="link-2" onClick={() => scrollToSection(contact)}>Contact</Nav.Link>
               </Nav.Item>
             </div>
 
             <div className="transparentfont moveSpace4">
               <Nav.Item className="fontcolor a" as="li">
-                <Link eventKey="link-2" to='/menu'>Menu</Link>
+                <Link eventKey="link-2" to='/menu' className="AboutHover">Menu</Link>
 
 
               </Nav.Item>
@@ -108,29 +110,45 @@ function App() {
         </div>
 
       </header>
+      </div>
       <Routes>
-        <Route path='/' element={<div>
+        <Route path='/' element={<div >
 
+         <div  className='TittleDiv'>
           <Title></Title>
+          </div>
 
-          <div ref={contact}>
+          <div ref={contact} className='ContactDiv'>
             <Contact ></Contact>
           </div>
 
-          <div ref={about}>
+          <div ref={about} className='AboutDiv'>
             <About ></About>
           </div>
 
-          <div>
+          <div className='BottomDivDiv'>
             <Bottom></Bottom>
           </div>
 
 
         </div>} />
-        <Route path='/menu' element={<Menu1/> }/>
+        <Route path='/menu' element={
+          <div>
 
-        
+            <div>
+              <Menu1 />
+            </div>
+            <div>
+              <Bottom></Bottom>
+            </div>
+
+          </div>
+        } />
+
+
       </Routes>
+
+
 
     </div>
 

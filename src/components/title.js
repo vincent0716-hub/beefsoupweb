@@ -94,7 +94,13 @@ export default class title extends Component {
               <span style={{letterSpacing:"0.02em"}}>Let us guide you to explore Sichuan flavour</span>
               </span>
             </h6>
+
+            <a  className='reserveBUTTON'> 
+              <button className='reserveBUTTON'> RESERVE NOW</button>
+            </a>
           </div>
+
+        
           </div>
 
           
