@@ -11,7 +11,7 @@ import Contact from './components/contact';
 import { BrowserRouter as Router, Route, Routes, Switch, NavLink, Link } from 'react-router-dom';
 import Menu1 from './components/menu1'
 import Menu from './menu';
-import { motion } from 'framer-motion'
+
 function App() {
 
   const contact = useRef(null);
