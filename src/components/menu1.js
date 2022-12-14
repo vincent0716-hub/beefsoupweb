@@ -3,8 +3,7 @@ import CropBeef from './cropBeef.png'
 import Frydump from './frydump.png'
 import Sweetricecake from './sweetricecake1.jpeg'
 import videoBackground from './editedsoup.mp4'
-import {motion} from 'framer-motion'
-import Bottom from './bottom'
+
 export default class menu1 extends Component {
     render() {
         const arrSource = [
