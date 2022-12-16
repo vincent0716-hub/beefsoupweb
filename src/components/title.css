@@ -542,11 +542,28 @@ video{
     width: 30px;
     height: 30px;
 }
+.fb:hover{
+    background-color: #dcfade;
+   
+    width: 30px;
+    height: 30px;
+}
 .ig{
     width: 30px;
     height: 30px;
 }
+.ig:hover{
+    background-color: #dcfade;
+   
+    width: 30px;
+    height: 30px;
+}
 .srb{
+    width: 30px;
+    height: 30px;
+}
+.srb:hover{
+    background-color: #dcfade;
     width: 30px;
     height: 30px;
 }
