@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import panda from './panda.png';
 import bamboo from './bamboo.png';
 import food1 from './food1.jpeg';
-
+import { BrowserRouter as Router, Route, Routes, Switch, NavLink, Link } from 'react-router-dom';
 const styles = {
     board: {
         position: "absolute",
@@ -96,7 +96,7 @@ export default class title extends Component {
             </h6>
 
             <a  className='reserveBUTTON'> 
-              <button className='reserveBUTTON'> RESERVE NOW</button>
+              <Link to='/reservation'className='reserveBUTTON'> RESERVE NOW</Link>
             </a>
           </div>
 

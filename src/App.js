@@ -10,7 +10,7 @@ import bamboo from './bamboo.png';
 import Contact from './components/contact';
 import { BrowserRouter as Router, Route, Routes, Switch, NavLink, Link } from 'react-router-dom';
 import Menu1 from './components/menu1'
-import Menu from './menu';
+import Reserve from './components/reservation'
 
 function App() {
 
@@ -148,6 +148,22 @@ function App() {
 
       </Routes>
 
+      <Routes>
+      <Route path='/reservation' element={
+          <div>
+
+            <div>
+              < Reserve/>
+            </div>
+            <div>
+              <Bottom></Bottom>
+            </div>
+
+          </div>
+        } />
+
+
+      </Routes>
 
 
     </div>
