@@ -33,7 +33,7 @@ function App() {
       width: "100%"
     },
     header: {
-      position: "absolute",
+      position: "relative",
       top: "0",
       left: "0",
       height: "110px",
@@ -74,14 +74,17 @@ function App() {
 
     <div >
       <div className='HEADERDiv'>
-      <header className="header" style={styles.header}>
-        <div >
-          <img style={styles.pictureposition3} src={logo1} alt="logo" />
-          <img style={styles.pictureposition1} src={panda} alt="panda" />
-          <img style={styles.pictureposition2} src={bamboo} alt="bamboo" />
-        </div>
-        <div className="classfont" style={styles.buttonareainHeader}>
-
+      <header className="header">
+        <div className='header1234'>
+          
+         
+          <div className="classfont">
+          <div className='imageButtonDIVVVV'>
+        <a href='/' >
+          <img  src={logo1} alt="logo" />
+          </a>
+          </div>
+            <div className='testDIVVV'>
           <Nav defaultActiveKey="/home" as="ul" >
             <div className="transparentfont moveSpace">
               <Nav.Item className="fontcolor a" as="li">
@@ -106,8 +109,15 @@ function App() {
 
               </Nav.Item>
             </div>
+            
           </Nav>
+          </div>
+          
         </div>
+        
+         
+        </div>
+        
 
       </header>
       </div>
