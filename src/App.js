@@ -10,7 +10,7 @@ import bamboo from './bamboo.png';
 import Contact from './components/contact';
 import { BrowserRouter as Router, Route, Routes, Switch, NavLink, Link } from 'react-router-dom';
 import Menu1 from './components/menu1'
-import Reserve from './components/Reservation'
+import Reserve from './components/ReservationNew'
 
 function App() {
 
