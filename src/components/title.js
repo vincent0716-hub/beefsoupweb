@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import logo from './logo.png';
 import './title.css'
 import Nav from 'react-bootstrap/Nav';
@@ -65,6 +65,7 @@ export default class title extends Component {
     };
   }
   
+  
   render() {
    /* const contact = useRef(null);
 
@@ -74,7 +75,9 @@ export default class title extends Component {
         behavior:'smooth'
       })
     }*/
+   
     return (
+      
         <div >
         
         <main>
@@ -96,7 +99,7 @@ export default class title extends Component {
             </h6>
 
             <a  className='reserveBUTTON'> 
-              <Link to='/reservation'className='reserveBUTTON'> RESERVE NOW</Link>
+              <Link to='/Reservation'className='reserveBUTTON'> RESERVE NOW</Link>
             </a>
           </div>
 
