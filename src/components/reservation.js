@@ -75,7 +75,7 @@ const Reservation = () => {
                 <div className='fistcolumninputFather3'>
                     <div>
                         <div className='horizontalH5'>
-                            <h5 className='wordsCOLORGREEN'>Email* </h5>
+                            <h5 className='wordsCOLORGREEN'>Email** </h5>
                             <h5 style={{
                                  height: "5px",
                                 color: "red"
