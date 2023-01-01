@@ -3,74 +3,91 @@
     background: green;
     border-radius: 15px;
     height: 15px;
-  }
-  .transparentfont{
-    color: transparent;
-   font-family:Arial, Helvetica, sans-serif;
-   text-decoration:dashed;
-   text-align: left;
-   font-size: larger;
-   
 }
-._2mhbw{
+
+.transparentfont {
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: dashed;
+    text-align: left;
+    font-size: larger;
+
+}
+
+._2mhbw {
     width: calc(100% - (var(--menuTotalBordersX, 0px)));
     height: calc(100% - (var(--menuTotalBordersY, 0px)));
     white-space: nowrap;
     overflow: visible;
 }
-.header{
+
+.header {
     position: "relative";
     top: 0;
-    left:0;
+    left: 0;
     height: 110px;
-    width:100%;
-    background:transparent;
+    width: 100%;
+    background: transparent;
     display: flex;
     align-items: center;
-   
+
 }
-ul{
+
+ul {
     display: flex;
 
 }
 
-.fontcolor a{
-  /*  color:#397a3d;*/
-    text-decoration:none;
+.fontcolor a {
+    /*  color:#397a3d;*/
+    text-decoration: none;
 }
 
-.moveSpace{
-    position:relative;
-    left:20px;
-   
+.moveSpace {
+    position: relative;
+    left: 20px;
+
 }
-.moveSpace2{
-    position:relative;
-    left:70px
+
+.moveSpace2 {
+    position: relative;
+    left: 70px
 }
-.moveSpace3{
-    position:relative;
-    left:130px
+
+.moveSpace3 {
+    position: relative;
+    left: 130px
 }
-.moveSpace4{
-    position:relative;
-    left:180px
+
+.moveSpace4 {
+    position: relative;
+    left: 180px
 }
-.firstdiv{
-    background-color:#89da8f;
-    position:relative;
-   
-    height: 600px;;
+
+.firstdiv {
+    background-color: #89da8f;
+    position: relative;
+    /*this means its the father in the css */
+    width: 100%;
+    height: 600px;
+    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
-.food1edit{
-    height:600px;
-    width:950px;
-   left:17%;
-   position:relative;
+
+.food1edit {
+    height: 600px;
+    width: 950px;
+
+    position: absolute;
 }
+
 .color_11 {
     color: rgb(var(--color_11));
 }
+
 .font_3 {
     font: var(--font_3);
     color: rgb(var(--color_14));
@@ -78,170 +95,190 @@ ul{
     text-align: center;
     font-size: 60px;
 }
+
 :root {
-    --color_0: 255,255,255;
-    --color_1: 255,255,255;
-    --color_2: 0,0,0;
-    --color_3: 237,28,36;
-    --color_4: 0,136,203;
-    --color_5: 255,203,5;
-    --color_6: 114,114,114;
-    --color_7: 176,176,176;
-    --color_8: 255,255,255;
-    --color_9: 114,114,114;
-    --color_10: 176,176,176;
-    --color_11: 255,255,255;
-    --color_12: 204,204,204;
-    --color_13: 160,160,159;
-    --color_14: 96,94,94;
-    --color_15: 0,0,0;
-    --color_16: 225,166,165;
-    --color_17: 195,119,117;
-    --color_18: 165,36,33;
-    --color_19: 125,25,23;
-    --color_20: 55,12,11;
-    --color_21: 226,218,193;
-    --color_22: 198,187,154;
-    --color_23: 169,150,95;
-    --color_24: 133,118,78;
-    --color_25: 56,50,32;
-    --color_26: 255,248,227;
-    --color_27: 252,243,215;
-    --color_28: 235,222,185;
-    --color_29: 199,185,143;
-    --color_30: 99,93,74;
-    --color_31: 177,232,230;
-    --color_32: 134,209,207;
-    --color_33: 53,186,182;
-    --color_34: 35,124,121;
-    --color_35: 18,62,61;
-    --font_0: normal normal normal 20px/1.4em lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
-    --font_3: normal normal normal 66px/1.4em museo-w01-700,museo-w05-700,serif;
-    --font_6: normal normal normal 21px/1.4em avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;
-    --font_9: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;
+    --color_0: 255, 255, 255;
+    --color_1: 255, 255, 255;
+    --color_2: 0, 0, 0;
+    --color_3: 237, 28, 36;
+    --color_4: 0, 136, 203;
+    --color_5: 255, 203, 5;
+    --color_6: 114, 114, 114;
+    --color_7: 176, 176, 176;
+    --color_8: 255, 255, 255;
+    --color_9: 114, 114, 114;
+    --color_10: 176, 176, 176;
+    --color_11: 255, 255, 255;
+    --color_12: 204, 204, 204;
+    --color_13: 160, 160, 159;
+    --color_14: 96, 94, 94;
+    --color_15: 0, 0, 0;
+    --color_16: 225, 166, 165;
+    --color_17: 195, 119, 117;
+    --color_18: 165, 36, 33;
+    --color_19: 125, 25, 23;
+    --color_20: 55, 12, 11;
+    --color_21: 226, 218, 193;
+    --color_22: 198, 187, 154;
+    --color_23: 169, 150, 95;
+    --color_24: 133, 118, 78;
+    --color_25: 56, 50, 32;
+    --color_26: 255, 248, 227;
+    --color_27: 252, 243, 215;
+    --color_28: 235, 222, 185;
+    --color_29: 199, 185, 143;
+    --color_30: 99, 93, 74;
+    --color_31: 177, 232, 230;
+    --color_32: 134, 209, 207;
+    --color_33: 53, 186, 182;
+    --color_34: 35, 124, 121;
+    --color_35: 18, 62, 61;
+    --font_0: normal normal normal 20px/1.4em lulo-clean-w01-one-bold, lulo-clean-w05-one-bold, sans-serif;
+    --font_3: normal normal normal 66px/1.4em museo-w01-700, museo-w05-700, serif;
+    --font_6: normal normal normal 21px/1.4em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+    --font_9: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
 }
-.fontdivContainer{
-    position:absolute;
-    top:13%;
-    left:19%;
-   text-align: center;
+
+.fontdivContainer {
+    position: absolute;
+
+
 }
+
 .font_6 {
     font: var(--font_6);
     color: rgb(var(--color_14));
     letter-spacing: 0em;
     text-align: center;
     font-size: 24px;
-    
+
 }
+
 .color_11 {
     color: rgb(var(--color_11));
 }
-.editposition{
-   left: 35%;
-   top:150px;
-   
+
+.editposition {
+    position: absolute;
+
 }
-.seconddiv{
-    background-color:#dcfade;
-    position:relative;
-    
-    height: 500px;;
+
+.seconddiv {
+    background-color: #dcfade;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    ;
 }
-.fontofRestaurant{
-    position:relative;
-    top:5%;
+
+.fontofRestaurant {
+    position: relative;
+    top: 5%;
 }
+
 .font_0 {
     font: var(--font_0);
     color: rgb(var(--color_18));
     letter-spacing: 0em;
     text-align: center;
-    top:0%;
+    top: 0%;
     font-size: 30px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
-.spanstyle{
-    color:#4e7c51;
+
+.spanstyle {
+    color: #4e7c51;
 }
-.restaurantDetailscontainer{
-    
+
+.restaurantDetailscontainer {
+
     position: relative;
     width: 728px;
     height: 365px;
-   
-    left:25%;
+
+    left: 25%;
 }
+
 ._3mguU ._34fGO {
-    border-left: var(--lnw,3px) solid rgba(var(--brd,var(--color_15)),var(--alpha-brd,1));
+    border-left: var(--lnw, 3px) solid rgba(var(--brd, var(--color_15)), var(--alpha-brd, 1));
     height: 100%;
-    color:#205c24;
-   
+    color: #205c24;
+
 }
+
 ._3mguU ._34fGO {
     width: 100%;
-   
+
 }
+
 #comp-jyqwkuhz {
     --lnw: 6px;
     --brd: var(--color_23);
     --mrg: 6px;
     --alpha-brd: 1;
-    color:#205c24;
+    color: #205c24;
 }
-.locationHeader{
+
+.locationHeader {
     position: relative;
     width: 728px;
     height: 30px;
     text-align: center;
-    color:rgb(158, 158, 158);
+    color: rgb(158, 158, 158);
 }
-.fontstylespecial{
-    color:rgb(158, 158, 158);
-    font-size: 26px;;
+
+.fontstylespecial {
+    color: rgb(158, 158, 158);
+    font-size: 26px;
+    ;
 }
-.editposition2{
-  position: relative;
- top:0;
- left:5%;
+
+.editposition2 {
+    position: relative;
+    top: 0;
+    left: 5%;
 }
-.restaurantDetailscontainerSub{
-    
+
+.restaurantDetailscontainerSub {
+
     position: relative;
     width: 728px;
     height: 365px;
-   
-    left:25%;
+
+    left: 25%;
 }
-.font_9{
+
+.font_9 {
     font: var(--font_9);
     color: rgb(var(--color_14));
     letter-spacing: 0em;
-    line-height:1.5em;
+    line-height: 1.5em;
     font-size: 15px;
 }
+
 ._2UgQw ._1Qjd7 {
-    font: var(--fnt,var(--font_5));
-    transition: var(--trans2,color .4s ease 0s);
-    color: var(--corvid-color,rgb(var(--txt,var(--color_15))));
+    font: var(--fnt, var(--font_5));
+    transition: var(--trans2, color .4s ease 0s);
+    color: var(--corvid-color, rgb(var(--txt, var(--color_15))));
     position: relative;
     white-space: nowrap;
     margin: 0;
 }
+
 #comp-k0los9w5 {
     --rd: 0px;
     --trans1: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
     --shd: none;
-    --fnt: normal normal normal 15px/1.4em museo-w01-700,museo-w05-700,serif;
+    --fnt: normal normal normal 15px/1.4em museo-w01-700, museo-w05-700, serif;
     --trans2: color 0.4s ease 0s;
     --txt: var(--color_11);
     --alpha-txt: 1;
     --brw: 1px;
     --bg: var(--color_18);
-    --brd: 169,150,95;
+    --brd: 169, 150, 95;
     --bgh: var(--color_18);
     --brdh: var(--color_18);
-    --txth: 255,255,255;
+    --txth: 255, 255, 255;
     --alpha-txth: 1;
     --bgd: var(--color_17);
     --alpha-bgd: 1;
@@ -254,48 +291,103 @@ ul{
     --alpha-brdd: 1;
     --alpha-brdh: 1;
     --boxShadowToggleOn-shd: none;
-    --shc-mutated-brightness: 83,18,17;
+    --shc-mutated-brightness: 83, 18, 17;
     --label-align: center;
     --label-text-align: center;
 }
+
 ._2UgQw[aria-disabled=false] ._1fbEI {
-    background-color: var(--corvid-background-color,rgba(var(--bg,var(--color_17)),var(--alpha-bg,1)));
-    border: solid var(--corvid-border-color,rgba(var(--brd,var(--color_15)),var(--alpha-brd,1))) var(--corvid-border-width,var(--brw,0));
-    cursor: pointer!important;
-    left:140px;
-    top:50px;
+    background-color: var(--corvid-background-color, rgba(var(--bg, var(--color_17)), var(--alpha-bg, 1)));
+    border: solid var(--corvid-border-color, rgba(var(--brd, var(--color_15)), var(--alpha-brd, 1))) var(--corvid-border-width, var(--brw, 0));
+    cursor: pointer !important;
+    left: 140px;
+    top: 50px;
     position: relative;
 }
-._1fbEI:after, ._1fbEI:before {
+
+._1fbEI:after,
+._1fbEI:before {
     content: "";
     flex-grow: 1;
     align-self: stretch;
 }
+
 ._1fbEI:before {
-    max-width: var(--margin-left,0);
+    max-width: var(--margin-left, 0);
 }
-.colorchange:hover{
+
+.colorchange:hover {
     background-color: #4e7c51;
 }
-.thirddiv{
-    background-color:#89da8f;
-    position:relative;
-    top:66px;
+
+.thirddiv {
+    background-color: #89da8f;
+    position: relative;
+    top: 66px;
     height: 400px;
 }
-.foodedit2{
+
+.foodedit2 {
     height: 400px;
-   left:17%;
-   position:relative;
+    left: 17%;
+    position: relative;
 }
-.restaurantDetailscontainerSubInABOUT{
-    
+
+.restaurantDetailscontainerSubInABOUT {
+
     position: absolute;
     width: 630px;
     height: 365px;
-    top:0;
-    left:55%;
+    top: 0;
+    left: 55%;
 }
-.spanrestriction{
-    width:500px
+
+.spanrestriction {
+    width: 500px
+}
+
+@media screen and (min-width:300px) and (max-width:500px) {/*RWD in width 300px - 500px*/
+    .seconddiv {
+
+        position: relative;
+       
+        height: 500px;
+        
+    }
+
+    .ContactDiv {
+        position: relative;
+        width: 380%; /*setting for mobile concle is 350% width*/
+    }
+    .TittleDiv {
+        position: relative;
+        height: 580px;
+        width: 380%; /*setting for mobile concle is 350% width*/
+    }
+    .thirddiv {
+        background-color: #89da8f;
+        position: relative;
+        top: 66px;
+        height: 400px;
+        width: 380%; /*setting for mobile concle is 350% width*/
+    }
+    .bottomDiv {
+        position: relative;
+        height: 200px;
+        background-color: #84b087;
+        width: 380%; /*setting for mobile concle is 350% width*/
+    }
+    .header {
+        position: "relative";
+        top: 0;
+        left: 0;
+        height: 110px;
+        width: 380%;
+        background: transparent;
+        display: flex;
+        align-items: center;
+    }
+    html{
+       
+    }
 }
