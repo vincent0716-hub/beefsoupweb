@@ -827,3 +827,18 @@ textarea {
   
    
 }
+@media screen and (min-width:300px) and (max-width:500px) {/*RWD in width 300px - 500px*/
+    .ReserveTest {
+        position: relative;
+        height: 100%;
+        width: 380%;
+    }
+    .menudiv {
+        position: relative;
+        height: 800px;
+        width: 380%;
+    }
+    html{
+       
+    }
+}
